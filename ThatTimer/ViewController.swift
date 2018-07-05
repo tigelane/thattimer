@@ -44,6 +44,7 @@ class ViewController: NSViewController {
     
     // My functions
     func reset_timer() {
+        countdown_field.stringValue = String(timer.isValid)
         let myTime = Int(time_slider.doubleValue)
         if myTime == 0 {
             timer.invalidate()
